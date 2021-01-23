@@ -28,6 +28,7 @@ namespace clisis_dotnet
         {
 
             services.AddControllers();
+            // swagger is a tool for API design, code generation and tests, not sure why its included here by dotnet new
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "clisis_dotnet", Version = "v1" });
